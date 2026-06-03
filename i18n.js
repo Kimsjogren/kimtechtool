@@ -52,6 +52,11 @@
             "about.body2": "We believe in technology's potential to make things easier, not more complicated. By elevating the user experience in every service we create, we strive to make technology a helpful hand in daily life. At KimTechTool, user-friendliness and empathy are core values that guide everything we do.",
             "about.contact": "Contact us",
 
+            "awards.eyebrow": "RECOGNITION",
+            "awards.title": "Awards &amp; Recognition",
+            "awards.name": "Scandinavian Business Awards",
+            "awards.desc": "KimTechTool is one of the 2026 winners of the Scandinavian Business Awards at EU Business News.",
+
             "web.eyebrow": "WEB DESIGN &amp; DEVELOPMENT",
             "web.title": "We also build websites",
             "web.body": "Need a modern, fast and mobile-friendly website for your business? KimTechTool designs and builds custom websites with the same focus on simplicity and craftsmanship as our software products — from idea and design to launch, hosting and support.",
@@ -133,6 +138,11 @@
             "about.body1": "KimTechTool är ett svenskt teknikföretag som banar väg för enklare vardagar och effektivare arbetsflöden. Vår passion är att skapa smarta digitala lösningar med fokus på användarvänlighet och effektivitet.",
             "about.body2": "Vi tror på teknikens potential att göra saker enklare — inte mer komplicerade. Genom att lyfta användarupplevelsen i varje tjänst vi skapar strävar vi efter att göra tekniken till en hjälpande hand i vardagen. Hos KimTechTool är användarvänlighet och empati kärnvärden som vägleder allt vi gör.",
             "about.contact": "Kontakta oss",
+
+            "awards.eyebrow": "UTMÄRKELSER",
+            "awards.title": "Utmärkelser",
+            "awards.name": "Scandinavian Business Awards",
+            "awards.desc": "KimTechTool är en av 2026 års vinnare av Scandinavian Business Awards hos EU Business News.",
 
             "web.eyebrow": "WEBBDESIGN &amp; UTVECKLING",
             "web.title": "Vi bygger även hemsidor",

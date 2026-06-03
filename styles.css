@@ -399,6 +399,65 @@ hr {
 .about-section .btn { margin-top: 16px; }
 
 /* ============================================================
+   Awards
+   ============================================================ */
+.awards-section {
+    padding: 56px 0;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.award-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 560px;
+    margin: 24px auto 0;
+    padding: 28px 24px;
+    background: linear-gradient(160deg, rgba(44, 108, 255, 0.10), rgba(10, 26, 58, 0.4));
+    border: 1px solid rgba(255, 215, 106, 0.25);
+    border-radius: 12px;
+    color: var(--text);
+    text-align: center;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.award-card:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+    border-color: rgba(255, 215, 106, 0.55);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+.award-ribbon { flex-shrink: 0; line-height: 0; }
+
+.award-text { display: flex; flex-direction: column; gap: 6px; }
+.award-year {
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    margin: 0;
+}
+.award-title {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 800;
+    margin: 0;
+}
+.award-issuer {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0;
+}
+.award-desc {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 8px 0 0;
+    line-height: 1.5;
+}
+
+/* ============================================================
    Websites / Web design section
    ============================================================ */
 .websites-section {
@@ -630,6 +689,10 @@ hr {
     .case-body { padding: 32px; }
 
     .about-section { padding: 96px 0; }
+
+    .awards-section { padding: 80px 0; }
+    .award-card { flex-direction: row; text-align: left; padding: 32px; gap: 28px; }
+    .award-text { text-align: left; }
 
     .founder-section { padding: 64px 0 96px; }
     .founder-img { max-width: 420px; }
