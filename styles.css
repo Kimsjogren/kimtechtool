@@ -1,0 +1,440 @@
+/* ============================================================
+   KimTechTool — recreation of the Loopia SiteBuilder design
+   ============================================================ */
+
+:root {
+    --bg: #0a1a3a;
+    --bg-2: #0d1f44;
+    --border: rgba(255, 255, 255, 0.12);
+    --text: #ffffff;
+    --muted: #9aa3b8;
+    --accent: #2c6cff;
+    --accent-hover: #1f5be0;
+    --max-width: 760px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--muted);
+    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    color: var(--text);
+    font-weight: 800;
+    line-height: 1.15;
+    margin: 0 0 24px;
+}
+
+h1 {
+    font-size: clamp(2rem, 6vw, 3rem);
+    text-align: center;
+}
+
+h2 {
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.link {
+    color: var(--accent);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 28px 0;
+}
+
+/* ============================================================
+   Header
+   ============================================================ */
+.site-header {
+    padding: 28px 0 0;
+}
+
+.header-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+}
+
+.logo {
+    color: var(--text);
+    font-weight: 800;
+    font-size: 1.6rem;
+    letter-spacing: -0.01em;
+}
+
+.logo:hover {
+    text-decoration: none;
+}
+
+.main-nav {
+    display: flex;
+    gap: 32px;
+}
+
+.main-nav a {
+    color: var(--text);
+    font-weight: 500;
+}
+
+/* ============================================================
+   Hero
+   ============================================================ */
+.hero {
+    padding: 64px 0 32px;
+    text-align: center;
+}
+
+.hero .lead {
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+/* ============================================================
+   Why EncodeX
+   ============================================================ */
+.why-section {
+    padding: 48px 0 64px;
+    text-align: center;
+}
+
+.get-started {
+    font-size: 1.5rem;
+    margin-bottom: 48px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title.center {
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.card {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 36px 28px;
+    text-align: left;
+    background: transparent;
+}
+
+.card-number {
+    color: var(--accent);
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 28px;
+}
+
+.card h3 {
+    margin-bottom: 18px;
+}
+
+.card p {
+    margin: 0;
+}
+
+/* ============================================================
+   CTA buttons
+   ============================================================ */
+.cta-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 240px;
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #fff;
+    border: 1px solid var(--accent);
+}
+
+.btn-primary:hover {
+    background: var(--accent-hover);
+    border-color: var(--accent-hover);
+    text-decoration: none;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+
+.btn-outline:hover {
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ============================================================
+   About KimTechTool
+   ============================================================ */
+.about-section {
+    padding: 64px 0;
+    border-top: 1px solid var(--border);
+}
+
+.about-section .section-title {
+    font-size: clamp(2.5rem, 7vw, 3.5rem);
+    margin-bottom: 40px;
+}
+
+.about-heading {
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.about-section .btn {
+    margin-top: 16px;
+}
+
+/* Decorative hero artwork (substitute for the cubes/lights photo) */
+.about-hero {
+    margin: 0 auto 24px;
+    max-width: 520px;
+    aspect-ratio: 4 / 3;
+    border-radius: 4px;
+    background:
+        radial-gradient(circle at 50% 55%, rgba(120, 180, 255, 0.45) 0%, rgba(10, 26, 58, 0) 55%),
+        radial-gradient(circle at 50% 55%, rgba(255, 255, 255, 0.25) 0%, rgba(10, 26, 58, 0) 18%),
+        #050d22;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-hero-art {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.cube {
+    position: absolute;
+    border: 1px solid rgba(220, 235, 255, 0.55);
+    transform: rotate(45deg);
+    box-shadow: 0 0 12px rgba(180, 215, 255, 0.35);
+}
+
+.cube.c1 { width: 60px;  height: 60px;  top: 22%; left: 18%; }
+.cube.c2 { width: 90px;  height: 90px;  top: 38%; left: 40%; opacity: 0.85; }
+.cube.c3 { width: 50px;  height: 50px;  top: 18%; left: 62%; opacity: 0.7; }
+.cube.c4 { width: 70px;  height: 70px;  top: 60%; left: 28%; opacity: 0.8; }
+.cube.c5 { width: 45px;  height: 45px;  top: 55%; left: 65%; opacity: 0.6; }
+
+.glow {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 50%;
+    box-shadow:
+        0 0 20px 6px rgba(255, 255, 255, 0.9),
+        0 0 60px 20px rgba(120, 180, 255, 0.7);
+}
+
+/* ============================================================
+   Collage / All-in-One
+   ============================================================ */
+.collage-section {
+    padding: 32px 0 64px;
+}
+
+.collage {
+    position: relative;
+    max-width: 520px;
+    margin: 0 auto 48px;
+    aspect-ratio: 1 / 1.1;
+}
+
+.collage-img {
+    position: absolute;
+    border-radius: 4px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.collage-main {
+    top: 8%;
+    left: 4%;
+    width: 78%;
+    height: 78%;
+    z-index: 1;
+}
+
+.collage-top-right {
+    top: 0;
+    right: 0;
+    width: 38%;
+    height: 28%;
+    z-index: 2;
+}
+
+.collage-bottom-left {
+    bottom: 6%;
+    left: 0;
+    width: 38%;
+    height: 26%;
+    z-index: 2;
+}
+
+/* ============================================================
+   Founder quote
+   ============================================================ */
+.founder-section {
+    padding: 32px 0 80px;
+    text-align: left;
+}
+
+.founder-img {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    margin: 0 auto 56px;
+    border-radius: 4px;
+}
+
+.founder-quote {
+    margin: 0 0 32px;
+    padding: 0;
+    color: var(--text);
+    font-size: 1.25rem;
+    line-height: 1.55;
+    font-weight: 500;
+}
+
+.founder-quote p {
+    color: var(--text);
+    margin-bottom: 20px;
+}
+
+.quote-attribution {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 16px;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.site-footer {
+    border-top: 1px solid var(--border);
+    padding: 40px 0 32px;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 32px;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 32px;
+    margin-bottom: 8px;
+}
+
+.footer-nav a {
+    color: var(--text);
+    font-weight: 500;
+}
+
+.copyright {
+    color: var(--muted);
+    margin: 0;
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (min-width: 720px) {
+    .header-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 28px;
+    }
+
+    .cta-stack {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .btn {
+        min-width: 220px;
+    }
+}
