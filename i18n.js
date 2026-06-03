@@ -55,6 +55,7 @@
             "awards.eyebrow": "RECOGNITION",
             "awards.title": "Awards &amp; Recognition",
             "awards.name": "Scandinavian Business Awards",
+            "awards.category": "Workflow Software Innovator of the Year 2026 — Sweden",
             "awards.desc": "KimTechTool is one of the 2026 winners of the Scandinavian Business Awards at EU Business News.",
 
             "web.eyebrow": "WEB DESIGN &amp; DEVELOPMENT",
@@ -142,6 +143,7 @@
             "awards.eyebrow": "UTMÄRKELSER",
             "awards.title": "Utmärkelser",
             "awards.name": "Scandinavian Business Awards",
+            "awards.category": "Årets innovatör inom arbetsflödes-mjukvara 2026 — Sverige",
             "awards.desc": "KimTechTool är en av 2026 års vinnare av Scandinavian Business Awards hos EU Business News.",
 
             "web.eyebrow": "WEBBDESIGN &amp; UTVECKLING",

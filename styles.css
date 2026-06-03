@@ -445,6 +445,13 @@ hr {
     font-weight: 800;
     margin: 0;
 }
+.award-category {
+    color: #ffd76a;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 4px 0 0;
+    line-height: 1.35;
+}
 .award-issuer {
     color: var(--muted);
     font-size: 0.9rem;
