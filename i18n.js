@@ -45,6 +45,7 @@
             "cruizx.f4.title": "Community focused",
             "cruizx.f4.body": "Belonging, style and the feeling that the product actually understands its users.",
             "cruizx.visit": "Visit cruizx.com",
+            "appstore.badge": "apple_badge_en.svg",
 
             "about.heading": "Kimtechtool creates simple, effective digital solutions",
             "about.body1": "Kimtechtool is a Swedish tech company paving the way for simpler everyday lives and more efficient workflows. Our passion is to create smart digital solutions with a focus on user-friendliness and efficiency.",
@@ -126,6 +127,7 @@
             "cruizx.f4.title": "Community-fokus",
             "cruizx.f4.body": "Tillhörighet, stil och känslan av att produkten faktiskt förstår sina användare.",
             "cruizx.visit": "Besök cruizx.com",
+            "appstore.badge": "apple_badge_sv.svg",
 
             "about.heading": "KimTechTool skapar enkla, effektiva digitala lösningar",
             "about.body1": "KimTechTool är ett svenskt teknikföretag som banar väg för enklare vardagar och effektivare arbetsflöden. Vår passion är att skapa smarta digitala lösningar med fokus på användarvänlighet och effektivitet.",
@@ -201,6 +203,12 @@
         document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
             var key = el.getAttribute("data-i18n-html");
             if (dict[key] != null) el.innerHTML = dict[key];
+        });
+
+        // Image src swap (e.g. localized App Store badge)
+        document.querySelectorAll("[data-i18n-src]").forEach(function (el) {
+            var key = el.getAttribute("data-i18n-src");
+            if (dict[key] != null) el.setAttribute("src", dict[key]);
         });
 
         // Update meta description specifically
