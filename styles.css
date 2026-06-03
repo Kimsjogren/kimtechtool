@@ -387,14 +387,122 @@ hr {
 .about-section .btn { margin-top: 16px; }
 
 /* ============================================================
+   Websites / Web design section
+   ============================================================ */
+.websites-section {
+    padding: 64px 0 72px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+}
+
+.case-card {
+    margin: 32px 0 40px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.case-link { display: block; color: inherit; }
+.case-link:hover { text-decoration: none; }
+
+.case-preview {
+    background: #0b1530;
+    border-bottom: 1px solid var(--border);
+}
+
+.case-browser-bar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 14px;
+    background: #0e1a3a;
+    border-bottom: 1px solid var(--border);
+}
+
+.case-browser-bar > span:not(.case-url) {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.case-url {
+    margin-left: 12px;
+    padding: 4px 12px;
+    font-size: 0.82rem;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 4px;
+}
+
+.case-screenshot {
+    aspect-ratio: 16 / 9;
+    background:
+        radial-gradient(ellipse at 50% 110%, rgba(255, 180, 60, 0.18), transparent 60%),
+        linear-gradient(180deg, #0a1a3a 0%, #050d22 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 20px;
+    text-align: center;
+}
+
+.case-hero { max-width: 480px; }
+
+.case-eyebrow {
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    margin-bottom: 12px;
+}
+
+.case-title {
+    color: #fff;
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    margin-bottom: 12px;
+    font-weight: 800;
+}
+
+.case-sub {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.case-body { padding: 24px; }
+.case-body h3 { margin-bottom: 12px; }
+.case-body .btn { margin-top: 8px; }
+
+.services-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 32px 0;
+    text-align: left;
+}
+
+.service {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 24px 22px;
+}
+
+.service h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.service p { margin: 0; font-size: 0.97rem; }
+
+/* ============================================================
    Founder quote
    ============================================================ */
 .founder-section { padding: 48px 0 72px; }
 
-.founcruizx-section { padding: 96px 0; }
-    .cruizx-features { grid-template-columns: 1fr 1fr; gap: 24px; }
-
-    .der-img {
+.founder-img {
     width: 100%;
     max-width: 360px;
     height: auto;
@@ -488,6 +596,13 @@ hr {
     }
 
     .card { padding: 40px 36px; }
+
+    .cruizx-section { padding: 96px 0; }
+    .cruizx-features { grid-template-columns: 1fr 1fr; gap: 24px; }
+
+    .websites-section { padding: 96px 0; }
+    .services-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+    .case-body { padding: 32px; }
 
     .about-section { padding: 96px 0; }
 
