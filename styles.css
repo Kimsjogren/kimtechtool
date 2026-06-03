@@ -69,7 +69,16 @@ hr {
 /* ============================================================
    Header
    ============================================================ */
-.site-header { padding: 24px 0 0; }
+.site-header {
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(10, 26, 58, 0.78);
+    -webkit-backdrop-filter: saturate(180%) blur(14px);
+    backdrop-filter: saturate(180%) blur(14px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
 
 .header-inner {
     display: flex;
