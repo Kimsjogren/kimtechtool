@@ -280,9 +280,12 @@ hr {
 }
 
 .app-store-link {
-    display: inline-block;
+    display: block;
     line-height: 0;
-    border-radius: 12px;
+    width: 100%;
+    max-width: 220px;
+    margin: 0 auto;
+    border-radius: 8px;
     transition: transform 0.15s ease, opacity 0.15s ease;
 }
 .app-store-link:hover { text-decoration: none; transform: translateY(-1px); opacity: 0.92; }
@@ -290,10 +293,8 @@ hr {
 
 .app-store-badge {
     display: block;
-    height: 44px;
-    width: auto;
-    max-width: 100%;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
 }
 
 .eyebrow {
