@@ -224,13 +224,13 @@ hr {
 .btn {
     display: block;
     width: 100%;
-    max-width: 220px;
+    max-width: 180px;
     margin: 0 auto;
-    padding: 9px 18px;
+    padding: 8px 16px;
     border-radius: 6px;
     text-align: center;
     font-weight: 600;
-    font-size: 0.88rem;
+    font-size: 0.85rem;
     cursor: pointer;
     transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
@@ -283,7 +283,7 @@ hr {
     display: block;
     line-height: 0;
     width: 100%;
-    max-width: 220px;
+    max-width: 180px;
     margin: 0 auto;
     border-radius: 8px;
     transition: transform 0.15s ease, opacity 0.15s ease;
