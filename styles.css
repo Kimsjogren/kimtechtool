@@ -219,6 +219,32 @@ hr {
     text-align: center;
 }
 
+.cruizx-logo-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.cruizx-logo {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    filter: drop-shadow(0 6px 24px rgba(44, 108, 255, 0.35));
+}
+
+.app-store-link {
+    display: inline-block;
+    line-height: 0;
+}
+
+.app-store-link:hover { text-decoration: none; }
+
+.app-store-badge {
+    height: 52px;
+    width: auto;
+    display: block;
+}
+
 .eyebrow {
     color: var(--accent);
     font-size: 0.85rem;
