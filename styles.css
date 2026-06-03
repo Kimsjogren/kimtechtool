@@ -404,6 +404,8 @@ hr {
     background: rgba(255, 255, 255, 0.02);
 }
 
+.case-card + .case-card { margin-top: 24px; }
+
 .case-link { display: block; color: inherit; }
 .case-link:hover { text-decoration: none; }
 
@@ -447,6 +449,13 @@ hr {
     justify-content: center;
     padding: 32px 20px;
     text-align: center;
+}
+
+.case-screenshot-cruizx {
+    background:
+        radial-gradient(ellipse at 30% 80%, rgba(44, 108, 255, 0.35), transparent 60%),
+        radial-gradient(ellipse at 70% 20%, rgba(120, 180, 255, 0.22), transparent 55%),
+        linear-gradient(160deg, #07142e 0%, #050d22 100%);
 }
 
 .case-hero { max-width: 480px; }
