@@ -276,14 +276,17 @@ hr {
 .app-store-link {
     display: inline-block;
     line-height: 0;
+    border-radius: 12px;
+    transition: transform 0.15s ease, opacity 0.15s ease;
 }
-
-.app-store-link:hover { text-decoration: none; }
+.app-store-link:hover { text-decoration: none; transform: translateY(-1px); opacity: 0.92; }
+.app-store-link:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
 .app-store-badge {
-    height: 52px;
-    width: auto;
     display: block;
+    height: 56px;
+    width: auto;
+    max-width: 100%;
 }
 
 .eyebrow {
