@@ -121,10 +121,10 @@ hr {
     border: 0;
     color: var(--muted);
     font: inherit;
-    font-size: 0.78rem;
+    font-size: 0.68rem;
     font-weight: 600;
     letter-spacing: 0.05em;
-    padding: 6px 12px;
+    padding: 4px 9px;
     cursor: pointer;
     transition: background 0.15s ease, color 0.15s ease;
 }
@@ -224,13 +224,13 @@ hr {
 .btn {
     display: inline-block;
     width: 100%;
-    max-width: 320px;
+    max-width: 260px;
     margin: 0 auto;
-    padding: 14px 28px;
+    padding: 11px 22px;
     border-radius: 6px;
     text-align: center;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.95rem;
     cursor: pointer;
     transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
@@ -585,7 +585,7 @@ hr {
         justify-content: center;
         gap: 16px;
     }
-    .cta-stack .btn { width: auto; min-width: 220px; }
+    .cta-stack .btn { width: auto; min-width: 180px; }
 }
 
 /* Desktop (≥960px) — 3-col images, more spacing, bigger type */
