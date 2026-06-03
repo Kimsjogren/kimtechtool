@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="KimTechTool – Swedish tech company creating simple, smart digital solutions. Meet EncodeX, the all-in-one image and video tool for Windows." />
-    <title>KimTechTool – Simple, smart digital solutions</title>
+    <meta name="description" data-i18n="meta.description" content="KimTechTool – Swedish tech company creating simple, smart digital solutions. Meet EncodeX, the all-in-one image and video tool for Windows." />
+    <title data-i18n="meta.title">KimTechTool – Simple, smart digital solutions</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -12,9 +12,14 @@
         <div class="container header-inner">
             <a href="#top" class="logo">kimtechtool.se</a>
             <nav class="main-nav" aria-label="Main">
-                <a href="#buy">Buy now</a>
-                <a href="#encodex">EncodeX</a>
-                <a href="#cruizx">CruizX</a>                <a href="#websites">Websites</a>                <a href="#websites">Websites</a>
+                <a href="#buy" data-i18n="nav.buy">Buy now</a>
+                <a href="#encodex" data-i18n="nav.encodex">EncodeX</a>
+                <a href="#cruizx" data-i18n="nav.cruizx">CruizX</a>
+                <a href="#websites" data-i18n="nav.websites">Websites</a>
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-btn" data-lang="sv" aria-pressed="false">SV</button>
+                </div>
             </nav>
         </div>
     </header>
@@ -23,19 +28,19 @@
         <!-- 1. HERO -->
         <section class="hero">
             <div class="container container-narrow">
-                <h1>Take Control of Your Workflow with EncodeX</h1>
-                <p class="lead">
+                <h1 data-i18n="hero.title">Take Control of Your Workflow with EncodeX</h1>
+                <p class="lead" data-i18n="hero.lead">
                     Experience simple, smart, and accessible digital solutions from
                     KimTechTool designed for maximum efficiency and an outstanding user
                     experience. Let the technology adapt to you and make your workday
                     smoother. Own your image conversions locally, securely, and lightning
                     fast.
                 </p>
-                <h2 class="get-started">Get started today</h2>
+                <h2 class="get-started" data-i18n="hero.getStarted">Get started today</h2>
             </div>
         </section>
 
-        <!-- 2. ALL-IN-ONE (images in numeric order: 8093 → 8094 → 8095) -->
+        <!-- 2. ALL-IN-ONE -->
         <section class="media-section">
             <div class="container container-narrow">
                 <div class="media-grid">
@@ -50,9 +55,9 @@
                     </figure>
                 </div>
 
-                <h2 class="section-title">All-in-One for Image &amp; Video</h2>
+                <h2 class="section-title" data-i18n="media.title">All-in-One for Image &amp; Video</h2>
 
-                <p>
+                <p data-i18n="media.body">
                     EncodeX is a powerful desktop app for Windows giving you complete
                     control over your image and video files. Supporting over 40 file
                     formats, EncodeX handles everything from simple image conversions to
@@ -62,9 +67,9 @@
                     and speed.
                 </p>
 
-                <p><strong>Pricing Plans:</strong> Try EncodeX FREE for 7 days!</p>
+                <p data-i18n-html="media.pricing"><strong>Pricing Plans:</strong> Try EncodeX FREE for 7 days!</p>
 
-                <p>
+                <p data-i18n-html="media.support">
                     Support: <a href="mailto:support@encodex.se" class="link">support@encodex.se</a>
                 </p>
             </div>
@@ -73,49 +78,50 @@
         <!-- 3. WHY ENCODEX -->
         <section id="encodex" class="why-section">
             <div class="container container-narrow">
-                <h2 class="section-title">Why EncodeX?</h2>
+                <h2 class="section-title" data-i18n="why.title">Why EncodeX?</h2>
 
                 <div class="cards">
                     <article class="card">
                         <div class="card-number">01.</div>
-                        <h3>Effortless to Use</h3>
-                        <p>Convert images in seconds, no installation or technical know-how required</p>
+                        <h3 data-i18n="why.c1.title">Effortless to Use</h3>
+                        <p data-i18n="why.c1.body">Convert images in seconds, no installation or technical know-how required</p>
                     </article>
 
                     <article class="card">
                         <div class="card-number">02.</div>
-                        <h3>Secure &amp; Private</h3>
-                        <p>Your files are protected with strong encryption and never leave your computer.</p>
+                        <h3 data-i18n="why.c2.title">Secure &amp; Private</h3>
+                        <p data-i18n="why.c2.body">Your files are protected with strong encryption and never leave your computer.</p>
                     </article>
 
                     <article class="card">
                         <div class="card-number">03.</div>
-                        <h3>Flexible for Everyone</h3>
-                        <p>Supports all major image formats and batch conversion, whether you're an individual or a business.</p>
+                        <h3 data-i18n="why.c3.title">Flexible for Everyone</h3>
+                        <p data-i18n="why.c3.body">Supports all major image formats and batch conversion, whether you're an individual or a business.</p>
                     </article>
 
                     <article class="card">
                         <div class="card-number">04.</div>
-                        <h3>Scalable &amp; Affordable</h3>
-                        <p>Start free and upgrade as your needs grow, with transparent pricing and no hidden fees.</p>
+                        <h3 data-i18n="why.c4.title">Scalable &amp; Affordable</h3>
+                        <p data-i18n="why.c4.body">Start free and upgrade as your needs grow, with transparent pricing and no hidden fees.</p>
                     </article>
                 </div>
 
                 <div class="cta-stack">
-                    <a id="buy" href="mailto:support@encodex.se?subject=Buy%20EncodeX" class="btn btn-primary">Buy EncodeX</a>
-                    <a href="#contact" class="btn btn-outline">Contact KimTechTool</a>
+                    <a id="buy" href="mailto:support@encodex.se?subject=Buy%20EncodeX" class="btn btn-primary" data-i18n="why.buy">Buy EncodeX</a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="why.contact">Contact KimTechTool</a>
                 </div>
             </div>
         </section>
-3b. CRUIZX -->
+
+        <!-- 3b. CRUIZX -->
         <section id="cruizx" class="cruizx-section">
             <div class="container container-narrow">
                 <div class="cruizx-logo-wrap">
                     <img src="logga_nobg.png" alt="CruizX logo" class="cruizx-logo" />
                 </div>
 
-                <p class="eyebrow">FOR SLOW VEHICLES</p>
-                <h2 class="section-title">Meet CruizX</h2>
+                <p class="eyebrow" data-i18n="cruizx.eyebrow">FOR SLOW VEHICLES</p>
+                <h2 class="section-title" data-i18n="cruizx.title">Meet CruizX</h2>
 
                 <div class="cruizx-art" aria-hidden="true">
                     <div class="cruizx-glow"></div>
@@ -129,14 +135,14 @@
                     <div class="cruizx-badge">CRUIZX&nbsp;LIVE</div>
                 </div>
 
-                <p>
+                <p data-i18n="cruizx.body1">
                     CruizX is built for slow vehicles — navigation, convoy and live road
                     warnings in one app. Not a generic map app, but an experience designed
                     for people who live in this vehicle culture and want a tool that
                     understands how they drive, meet, communicate and move together.
                 </p>
 
-                <p>
+                <p data-i18n="cruizx.body2">
                     From the first meeting spot to the last car in the line, CruizX is
                     designed for convoy movement, shared presence and a driving culture
                     that generic map apps simply don't understand.
@@ -144,33 +150,32 @@
 
                 <div class="cruizx-features">
                     <div class="feature">
-                        <h3>Built for the right vehicles</h3>
-                        <p>Not a general app — tailored for this specific vehicle group.</p>
+                        <h3 data-i18n="cruizx.f1.title">Built for the right vehicles</h3>
+                        <p data-i18n="cruizx.f1.body">Not a general app — tailored for this specific vehicle group.</p>
                     </div>
                     <div class="feature">
-                        <h3>Convoy-first</h3>
-                        <p>Stay in touch, keep formation, find each other and share a live overview on the road.</p>
+                        <h3 data-i18n="cruizx.f2.title">Convoy-first</h3>
+                        <p data-i18n="cruizx.f2.body">Stay in touch, keep formation, find each other and share a live overview on the road.</p>
                     </div>
                     <div class="feature">
-                        <h3>Live coordination</h3>
-                        <p>Real-time positions, road warnings and group awareness while you drive.</p>
+                        <h3 data-i18n="cruizx.f3.title">Live coordination</h3>
+                        <p data-i18n="cruizx.f3.body">Real-time positions, road warnings and group awareness while you drive.</p>
                     </div>
                     <div class="feature">
-                        <h3>Community focused</h3>
-                        <p>Belonging, style and the feeling that the product actually understands its users.</p>
-                    </div>app-store-link" target="_blank" rel="noopener" aria-label="Download CruizX on the App Store">
-                        <img src="apple_badge.png" alt="Download on the App Store" class="app-store-badge" />
-                    
+                        <h3 data-i18n="cruizx.f4.title">Community focused</h3>
+                        <p data-i18n="cruizx.f4.body">Belonging, style and the feeling that the product actually understands its users.</p>
+                    </div>
                 </div>
 
                 <div class="cta-stack">
-                    <a href="https://apple.co/4uSQbpG" class="btn btn-primary" target="_blank" rel="noopener">Download on the App Store</a>
-                    <a href="https://cruizx.com" class="btn btn-outline" target="_blank" rel="noopener">Visit cruizx.com</a>
+                    <a href="https://apple.co/4uSQbpG" target="_blank" rel="noopener" aria-label="Download CruizX on the App Store">
+                        <img src="apple_badge.png" alt="Download on the App Store" class="app-store-badge" />
+                    </a>
+                    <a href="https://cruizx.com" class="btn btn-outline" target="_blank" rel="noopener" data-i18n="cruizx.visit">Visit cruizx.com</a>
                 </div>
             </div>
         </section>
 
-        <!-- 
         <!-- 4. ABOUT KIMTECHTOOL -->
         <section class="about-section">
             <div class="container container-narrow">
@@ -187,18 +192,18 @@
                     </div>
                 </div>
 
-                <h3 class="about-heading">
+                <h3 class="about-heading" data-i18n="about.heading">
                     Kimtechtool creates simple, effective digital solutions
                 </h3>
 
-                <p>
+                <p data-i18n="about.body1">
                     Kimtechtool is a Swedish tech company paving the way for simpler
                     everyday lives and more efficient workflows. Our passion is to create
                     smart digital solutions with a focus on user-friendliness and
                     efficiency.
                 </p>
 
-                <p>
+                <p data-i18n="about.body2">
                     We believe in technology's potential to make things easier, not more
                     complicated. By elevating the user experience in every service we
                     create, we strive to make technology a helpful hand in daily life. At
@@ -206,17 +211,17 @@
                     everything we do.
                 </p>
 
-                <a id="contact" href="mailto:support@encodex.se" class="btn btn-primary">Contact us</a>
+                <a id="contact" href="mailto:support@encodex.se" class="btn btn-primary" data-i18n="about.contact">Contact us</a>
             </div>
         </section>
 
-        <!-- 4b. WEBSITES / WEB DESIGN -->
+        <!-- 4b. WEBSITES -->
         <section id="websites" class="websites-section">
             <div class="container container-narrow">
-                <p class="eyebrow">WEB DESIGN &amp; DEVELOPMENT</p>
-                <h2 class="section-title">We also build websites</h2>
+                <p class="eyebrow" data-i18n="web.eyebrow">WEB DESIGN &amp; DEVELOPMENT</p>
+                <h2 class="section-title" data-i18n="web.title">We also build websites</h2>
 
-                <p>
+                <p data-i18n="web.body">
                     Need a modern, fast and mobile-friendly website for your business?
                     KimTechTool designs and builds custom websites with the same focus on
                     simplicity and craftsmanship as our software products — from idea and
@@ -232,23 +237,23 @@
                             </div>
                             <div class="case-screenshot">
                                 <div class="case-hero">
-                                    <p class="case-eyebrow">SVENSK HÅRSTYLIST · SKARPNÄCK</p>
+                                    <p class="case-eyebrow" data-i18n="web.shave.eyebrow">SWEDISH HAIR STYLIST · SKARPNÄCK</p>
                                     <h3 class="case-title">Salon Shave &amp; Cut</h3>
-                                    <p class="case-sub">Dam &amp; Herr · Klippning · Rakning · Skäggtrimning</p>
+                                    <p class="case-sub" data-i18n="web.shave.sub">Women &amp; Men · Haircuts · Shaving · Beard trim</p>
                                 </div>
                             </div>
                         </div>
                     </a>
 
                     <div class="case-body">
-                        <h3>Case: Salon Shave &amp; Cut</h3>
-                        <p>
+                        <h3 data-i18n="web.shave.h">Case: Salon Shave &amp; Cut</h3>
+                        <p data-i18n="web.shave.body">
                             A complete website for a barbershop in Skarpnäck, Stockholm —
                             with services, full price list, gallery, opening hours and
                             Google Maps integration. Built mobile-first and optimized for
                             local search.
                         </p>
-                        <a href="https://shavecut.se" class="btn btn-outline" target="_blank" rel="noopener">Visit shavecut.se</a>
+                        <a href="https://shavecut.se" class="btn btn-outline" target="_blank" rel="noopener" data-i18n="web.shave.visit">Visit shavecut.se</a>
                     </div>
                 </div>
 
@@ -261,23 +266,23 @@
                             </div>
                             <div class="case-screenshot case-screenshot-cruizx">
                                 <div class="case-hero">
-                                    <p class="case-eyebrow">FOR SLOW VEHICLES</p>
+                                    <p class="case-eyebrow" data-i18n="cruizx.eyebrow">FOR SLOW VEHICLES</p>
                                     <h3 class="case-title">CruizX</h3>
-                                    <p class="case-sub">Navigation, convoy and live road warnings — in one app.</p>
+                                    <p class="case-sub" data-i18n="web.cruizx.sub">Navigation, convoy and live road warnings — in one app.</p>
                                 </div>
                             </div>
                         </div>
                     </a>
 
                     <div class="case-body">
-                        <h3>Case: CruizX</h3>
-                        <p>
+                        <h3 data-i18n="web.cruizx.h">Case: CruizX</h3>
+                        <p data-i18n="web.cruizx.body">
                             Marketing site for the CruizX mobile app — a focused landing
                             page with hero, feature sections, brand storytelling and App
                             Store / Google Play download links. Multilingual and built for
                             launch.
                         </p>
-                        <a href="https://cruizx.com" class="btn btn-outline" target="_blank" rel="noopener">Visit cruizx.com</a>
+                        <a href="https://cruizx.com" class="btn btn-outline" target="_blank" rel="noopener" data-i18n="web.cruizx.visit">Visit cruizx.com</a>
                     </div>
                 </div>
 
@@ -290,46 +295,46 @@
                             </div>
                             <div class="case-screenshot case-screenshot-encodex">
                                 <div class="case-hero">
-                                    <p class="case-eyebrow">EST. 2025 · DIGITAL CONVERSION</p>
+                                    <p class="case-eyebrow" data-i18n="web.encodex.eyebrow">EST. 2025 · DIGITAL CONVERSION</p>
                                     <h3 class="case-title">EncodeX</h3>
-                                    <p class="case-sub">Frame-perfect video editing and conversion for Windows.</p>
+                                    <p class="case-sub" data-i18n="web.encodex.sub">Frame-perfect video editing and conversion for Windows.</p>
                                 </div>
                             </div>
                         </div>
                     </a>
 
                     <div class="case-body">
-                        <h3>Case: EncodeX</h3>
-                        <p>
+                        <h3 data-i18n="web.encodex.h">Case: EncodeX</h3>
+                        <p data-i18n="web.encodex.body">
                             Full product website for EncodeX — including landing page,
                             extensive knowledge base, blog, FAQ, download, support and
                             legal pages. Built from the ground up with SEO, performance
                             and offline-first messaging in mind.
                         </p>
-                        <a href="https://encodex.se" class="btn btn-outline" target="_blank" rel="noopener">Visit encodex.se</a>
+                        <a href="https://encodex.se" class="btn btn-outline" target="_blank" rel="noopener" data-i18n="web.encodex.visit">Visit encodex.se</a>
                     </div>
                 </div>
 
                 <div class="services-grid">
                     <div class="service">
-                        <h3>Custom design</h3>
-                        <p>Unique designs that match your brand — no templates, no clutter.</p>
+                        <h3 data-i18n="web.s1.title">Custom design</h3>
+                        <p data-i18n="web.s1.body">Unique designs that match your brand — no templates, no clutter.</p>
                     </div>
                     <div class="service">
-                        <h3>Mobile-first</h3>
-                        <p>Built to look great and load fast on every device, from phone to desktop.</p>
+                        <h3 data-i18n="web.s2.title">Mobile-first</h3>
+                        <p data-i18n="web.s2.body">Built to look great and load fast on every device, from phone to desktop.</p>
                     </div>
                     <div class="service">
-                        <h3>Domain &amp; hosting</h3>
-                        <p>Help with domain setup, hosting, email and SSL — we handle the technical bits.</p>
+                        <h3 data-i18n="web.s3.title">Domain &amp; hosting</h3>
+                        <p data-i18n="web.s3.body">Help with domain setup, hosting, email and SSL — we handle the technical bits.</p>
                     </div>
                     <div class="service">
-                        <h3>Ongoing support</h3>
-                        <p>Updates, content changes and improvements after launch when you need it.</p>
+                        <h3 data-i18n="web.s4.title">Ongoing support</h3>
+                        <p data-i18n="web.s4.body">Updates, content changes and improvements after launch when you need it.</p>
                     </div>
                 </div>
 
-                <a href="mailto:support@encodex.se?subject=Website%20inquiry" class="btn btn-primary">Get a quote</a>
+                <a href="mailto:support@encodex.se?subject=Website%20inquiry" class="btn btn-primary" data-i18n="web.quote">Get a quote</a>
             </div>
         </section>
 
@@ -339,24 +344,24 @@
                 <img src="IMG_6755.WEBP" alt="Kim Sjögren Degerkvist, Founder &amp; CEO of KimTechTool" class="founder-img" loading="lazy" />
 
                 <blockquote class="founder-quote">
-                    <p>
+                    <p data-i18n="founder.q1">
                         &ldquo;I started KimTechTools with a clear vision: to create
                         intuitive, reliable software that truly simplifies everyday work
                         for individuals and businesses alike. With EncodeX, our goal is
                         to make image conversion and management fast, secure, and
                         accessible—without unnecessary complexity.
                     </p>
-                    <p>
+                    <p data-i18n="founder.q2">
                         We're passionate about solving real problems and believe
                         technology should be easy, trustworthy, and deliver real value
                         for every user.&rdquo;
                     </p>
-                    <footer class="quote-attribution">
+                    <footer class="quote-attribution" data-i18n="founder.attr">
                         Kim Sjögren Degerkvist, Founder &amp; CEO
                     </footer>
                 </blockquote>
 
-                <a href="mailto:support@encodex.se" class="btn btn-primary">Contact us</a>
+                <a href="mailto:support@encodex.se" class="btn btn-primary" data-i18n="founder.contact">Contact us</a>
             </div>
         </section>
     </main>
@@ -365,12 +370,16 @@
         <div class="container container-narrow">
             <a href="#top" class="logo footer-logo">kimtechtool.se</a>
             <nav class="footer-nav" aria-label="Footer">
-                <a href="#buy">Buy now</a>
-                <a href="#encodex">EncodeX</a>
+                <a href="#buy" data-i18n="nav.buy">Buy now</a>
+                <a href="#encodex" data-i18n="nav.encodex">EncodeX</a>
+                <a href="#cruizx" data-i18n="nav.cruizx">CruizX</a>
+                <a href="#websites" data-i18n="nav.websites">Websites</a>
             </nav>
             <hr />
             <p class="copyright">&copy; 2026 kimtechtool.se</p>
         </div>
     </footer>
+
+    <script src="i18n.js"></script>
 </body>
 </html>
