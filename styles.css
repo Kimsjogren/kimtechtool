@@ -83,10 +83,17 @@ hr {
 .header-inner {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
+    gap: 16px;
     border-bottom: 1px solid var(--border);
-    padding-bottom: 24px;
+    padding-bottom: 16px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
 }
 
 .logo {
@@ -284,9 +291,10 @@ hr {
 
 .app-store-badge {
     display: block;
-    height: 56px;
+    height: 44px;
     width: auto;
     max-width: 100%;
+    margin: 0 auto;
 }
 
 .eyebrow {
@@ -386,45 +394,6 @@ hr {
 .about-title {
     font-size: clamp(2.25rem, 8vw, 3.5rem);
     margin-bottom: 40px;
-}
-
-.about-hero {
-    margin: 0 auto 32px;
-    max-width: 560px;
-    aspect-ratio: 4 / 3;
-    border-radius: 6px;
-    background:
-        radial-gradient(circle at 50% 55%, rgba(120, 180, 255, 0.45) 0%, rgba(10, 26, 58, 0) 55%),
-        radial-gradient(circle at 50% 55%, rgba(255, 255, 255, 0.25) 0%, rgba(10, 26, 58, 0) 18%),
-        #050d22;
-    overflow: hidden;
-    position: relative;
-}
-
-.about-hero-art { position: relative; width: 100%; height: 100%; }
-
-.cube {
-    position: absolute;
-    border: 1px solid rgba(220, 235, 255, 0.55);
-    transform: rotate(45deg);
-    box-shadow: 0 0 12px rgba(180, 215, 255, 0.35);
-}
-.cube.c1 { width: 60px;  height: 60px;  top: 22%; left: 18%; }
-.cube.c2 { width: 90px;  height: 90px;  top: 38%; left: 40%; opacity: 0.85; }
-.cube.c3 { width: 50px;  height: 50px;  top: 18%; left: 62%; opacity: 0.7; }
-.cube.c4 { width: 70px;  height: 70px;  top: 60%; left: 28%; opacity: 0.8; }
-.cube.c5 { width: 45px;  height: 45px;  top: 55%; left: 65%; opacity: 0.6; }
-
-.glow {
-    position: absolute;
-    width: 8px; height: 8px;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    background: #fff;
-    border-radius: 50%;
-    box-shadow:
-        0 0 20px 6px rgba(255, 255, 255, 0.9),
-        0 0 60px 20px rgba(120, 180, 255, 0.7);
 }
 
 .about-heading { margin-top: 16px; margin-bottom: 24px; }
@@ -605,11 +574,7 @@ hr {
 @media (min-width: 640px) {
     .container { padding: 0 32px; }
 
-    .header-inner {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
+    .main-nav { gap: 32px; }
 
     .cards {
         grid-template-columns: 1fr 1fr;

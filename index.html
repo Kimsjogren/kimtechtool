@@ -10,16 +10,18 @@
 <body>
     <header class="site-header">
         <div class="container header-inner">
-            <a href="#top" class="logo">kimtechtool.se</a>
+            <div class="header-top">
+                <a href="#top" class="logo">kimtechtool.se</a>
+                <div class="lang-switch" role="group" aria-label="Language">
+                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-btn" data-lang="sv" aria-pressed="false">SV</button>
+                </div>
+            </div>
             <nav class="main-nav" aria-label="Main">
                 <a href="#buy" data-i18n="nav.buy">Buy now</a>
                 <a href="#encodex" data-i18n="nav.encodex">EncodeX</a>
                 <a href="#cruizx" data-i18n="nav.cruizx">CruizX</a>
                 <a href="#websites" data-i18n="nav.websites">Websites</a>
-                <div class="lang-switch" role="group" aria-label="Language">
-                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
-                    <button type="button" class="lang-btn" data-lang="sv" aria-pressed="false">SV</button>
-                </div>
             </nav>
         </div>
     </header>
@@ -180,17 +182,6 @@
         <section class="about-section">
             <div class="container container-narrow">
                 <h2 class="section-title center about-title">KimTechTool</h2>
-
-                <div class="about-hero" aria-hidden="true">
-                    <div class="about-hero-art">
-                        <div class="cube c1"></div>
-                        <div class="cube c2"></div>
-                        <div class="cube c3"></div>
-                        <div class="cube c4"></div>
-                        <div class="cube c5"></div>
-                        <div class="glow"></div>
-                    </div>
-                </div>
 
                 <h3 class="about-heading" data-i18n="about.heading">
                     Kimtechtool creates simple, effective digital solutions
