@@ -140,7 +140,7 @@
             "about.body2": "Vi tror på teknikens potential att göra saker enklare — inte mer komplicerade. Genom att lyfta användarupplevelsen i varje tjänst vi skapar strävar vi efter att göra tekniken till en hjälpande hand i vardagen. Hos KimTechTool är användarvänlighet och empati kärnvärden som vägleder allt vi gör.",
             "about.contact": "Kontakta oss",
 
-            "awards.eyebrow": "UTMÄRKELSER",
+            "awards.eyebrow": "ERKÄNNANDE",
             "awards.title": "Utmärkelser",
             "awards.name": "Scandinavian Business Awards",
             "awards.category": "Workflow Software Innovator of the Year 2026 – Sverige",
