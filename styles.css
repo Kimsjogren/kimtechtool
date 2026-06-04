@@ -399,6 +399,17 @@ hr {
 .about-heading { margin-top: 16px; margin-bottom: 24px; }
 .about-section .btn { margin-top: 16px; }
 
+.about-figure {
+    margin: 0 auto 32px;
+    max-width: 560px;
+}
+.about-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
 /* ============================================================
    Awards
    ============================================================ */
